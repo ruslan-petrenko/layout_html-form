@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
@@ -20,48 +19,47 @@
         <legend>Personal information</legend>
 
 
-        <label>
-          <div class="inputs">
+        <div class="inputs">
+          <label>
           Surname:
             <input type="text" name="Surname"
-            autocomplete="off">
-          </div>
-        </label>
+             autocomplete="off">
+          </label>
+        </div>
 
-
-        <label>
-          <div class="inputs">
-          Name:
+        <div class="inputs">
+          <label>
+            Name:
             <input type="text" name="Name"
             autocomplete="off">
-          </div>
-        </label>
+          </label>
+        </div>
 
-
-        <label>
-          <div class="inputs">
-          How old are you?
+        <div class="inputs">
+          <label>
+          How old are You?
             <input type="number" name="Your age"
             min="1" max="100"
             value="12">
-          </div>
-        </label>
+          </label>
+        </div>
 
 
-        <label>
-          <div class="inputs">
-          Full date of birth:
+        <div class="inputs">
+          <label>
+            Full date of birth:
             <input type="date" name="Date of birth">
-          </div>
-        </label>
+          </label>
+        </div>
 
 
-        <label>
-          <div class="inputs">
-           I accept the term of the agreement
+        <div>
+          <label>
+            I accept the term of the agreement
             <input type="checkbox" name="agree">
-          </div>
-        </label>
+          </label>
+        </div>
+
 
       </fieldset>
 
@@ -70,28 +68,28 @@
         <legend>Registration</legend>
 
 
-        <label>
-          <div class="inputs">
-            Email:
+        <div class="inputs">
+          <label>
+          E-mail:
             <input type="email"
           name="email"
           placeholder="email@example.com"
           required>
-          </div>
-        </label>
+          </label>
+        </div>
 
 
-
-        <label>
-          <div class="inputs">
+        <div>
+          <label>
             Password:
             <input type="password"
             name="password"
             required
             minlength="5"
             maxlength="20">
-          </div>
-        </label>
+          </label>
+        </div>
+
       </fieldset>
 
 
@@ -100,6 +98,7 @@
 
         <div class="inputs">
           <label>
+            Do you love cats?
             Yes
             <input type="radio"
             name="Yes">
@@ -113,68 +112,69 @@
         </div>
 
 
-        <label>
-          <div class="inputs">
-            What is your favorite color?
+        <div class="inputs">
+          <label>
+              What is your favorite color?
             <input type="color" name="color">
-          </div>
-        </label>
+          </label>
+        </div>
 
 
-        <label>
-          <div class="inputs">
+        <div class="inputs">
+          <label>
             What time do you go to bed?
-            <input type="time" name="time">
-          </div>
-        </label>
+            <input type="time" name="time"
+            step="2">
+          </label>
+        </div>
 
 
-        <label>
-          <div class="inputs">
+        <div class="inputs">
+          <label>
             What are your favorite brand of cars?
-
             <select name="Cars" id="Cars"
             multiple>
               <option value="Car">BMW</option>
               <option value="Car">Audi</option>
               <option value="Car">Lada</option>
             </select>
-          </div>
-        </label>
+          </label>
+        </div>
 
 
-        <label>
-          <div class="inputs">
+        <div>
+          <label>
             How do you rate our work?
             <input type="range" name="rating">
-          </div>
-        </label>
+          </label>
+        </div>
       </fieldset>
 
 
       <fieldset class="blocks">
         <legend>Additional info:</legend>
 
-        <label>
-          <div class="inputs">
+
+        <div class="inputs">
+          <label>
             Comments:
             <textarea name="Comments"
             cols="20"
              rows="2">
             </textarea>
-          </div>
-        </label>
+          </label>
+        </div>
 
 
-        <label>
-          <div class="inputs">
+        <div>
+          <label>
             Would you recommend us?
             <select name="recommendation" id="recommendation">
               <option value="Yes">Yes</option>
               <option value="No">No</option>t
             </select>
-          </div>
-        </label>
+          </label>
+        </div>
 
       </fieldset>
 
